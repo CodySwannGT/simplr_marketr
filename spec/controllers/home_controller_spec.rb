@@ -1,11 +1,11 @@
-require 'rails_helper'
+require 'spec_helper'
 
-RSpec.describe HomeController, :type => :controller do
+describe HomeController do
 
   describe "GET 'index'" do
-    it "returns http success" do
+    it "should be successful" do
       get 'index'
-      expect(response).to be_success
+      response.should be_success
     end
   end
 
